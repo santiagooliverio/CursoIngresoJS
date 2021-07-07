@@ -10,7 +10,7 @@ function mostrarAumento()
 	importe = parseInt(importe);
 
 	let resultado;
-	resultado = importe * 0.25;
+	resultado = importe - (importe * 0.25);
 
 	txtIdResultado.value = resultado;
 }
