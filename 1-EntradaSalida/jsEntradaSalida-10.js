@@ -1,16 +1,21 @@
-/* Oliverio Santiago, Div H
+/* Oliverio Santiago, Div H | Ej 10 BIS
 Debemos lograr tomar el importe por ID.
 Transformarlo a entero (parseInt), luego
-mostrar el importe con un Descuento del 25 %
+mostrar el importe con un Descuento del XX %
 en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
 	let importe;				 
 	importe = txtIdImporte.value;	
-	importe = parseInt(importe);
+	importe = parseFloat(importe);
+
+	let descuento;
+	descuento = parseInt(descuento);
+	descuento = prompt("Ingrese su descuento: ");
 
 	let resultado;
-	resultado = importe - (importe * 0.25);
+	resultado = parseFloat(resultado);
+	resultado = importe - (importe * (descuento/100));
 
 	txtIdResultado.value = resultado;
 }
